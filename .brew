@@ -33,10 +33,10 @@ brew install php54
 # Install everything else
 brew install ack
 #brew install exiv2
-brew install git
+#brew install git
 #brew install imagemagick
 brew install lynx
-brew install node
+#brew install node
 brew install rename
 brew install rhino
 brew install tree

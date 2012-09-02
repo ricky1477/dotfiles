@@ -8,13 +8,13 @@ alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
-alias p="cd ~/Projects"
+alias p="cd ~/Scm"
 alias g="git"
 alias h="history"
 alias j="jobs"
 alias v="vim"
-alias m="mate ."
-alias s="subl ."
+#alias m="mate ."
+#alias s="subl ."
 alias o="open"
 alias oo="open ."
 
@@ -53,7 +53,7 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+
 alias whois="whois -h whois-servers.net"
 
 # Flush Directory Service cache
-alias flush="dscacheutil -flushcache"
+#alias flush="dscacheutil -flushcache"
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
@@ -105,7 +105,7 @@ alias spotoff="sudo mdutil -a -i off"
 alias spoton="sudo mdutil -a -i on"
 
 # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
-alias plistbuddy="/usr/libexec/PlistBuddy"
+#alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # Launch iOS Simulator
 alias ios="open -a /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app"
