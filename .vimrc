@@ -26,6 +26,14 @@ if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
 
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+au ColorScheme * highlight ExtraWhitespace guibg=red
+au BufEnter * match ExtraWhitespace /\s\+$/
+au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match ExtraWhiteSpace /\s\+$/
+" Always be in Paste Mode
+set paste
 " Respect modeline in files
 set modeline
 set modelines=4
@@ -40,9 +48,11 @@ syntax on
 set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
-" Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set smartindent
+set autoindent
 " Highlight searches
 set hlsearch
 " Ignore case of searches
@@ -51,8 +61,6 @@ set ignorecase
 set incsearch
 " Always show status line
 set laststatus=2
-" Enable mouse in all modes
-set mouse=a
 " Disable error bells
 set noerrorbells
 " Don’t reset cursor to start of line when moving around.
@@ -61,12 +69,14 @@ set nostartofline
 set ruler
 " Don’t show the intro message when starting Vim
 set shortmess=atI
+" Enable mouse in all modes
+" set mouse=a
 " Show the current mode
-set showmode
+" set showmode
 " Show the filename in the window titlebar
-set title
+" set title
 " Show the (partial) command as it’s being typed
-set showcmd
+" set showcmd
 " Use relative line numbers
 if exists("&relativenumber")
 	set relativenumber
