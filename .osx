@@ -5,9 +5,9 @@
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "JackBook Pro"
-scutil --set HostName "JackBook Pro"
-scutil --set LocalHostName "JackBook-Pro"
+scutil --set ComputerName "iMac IIP"
+scutil --set HostName "iMac IIP"
+scutil --set LocalHostName "iMac-IIP"
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool true
