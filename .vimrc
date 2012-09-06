@@ -82,15 +82,23 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
+
+" Numbers.vim
 Bundle "myusuf3/numbers.vim"
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+nmap <C-N><C-N> :set invnumber<CR>
+
+" Surround
 Bundle 'surround.vim'
-" Bundle 'Syntastic'
+
+" Syntastic: For js make sure you have jshint installed
+Bundle 'Syntastic'
+
 " SnipMate
+Bundle "honza/snipmate-snippets"
 Bundle "garbas/vim-snipmate"
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
 " order matters, snippets_dir before filetype
 let g:snippets_dir = "~/.vim/bundle/snipmate-snippets/snippets/"
 highlight Pmenu ctermbg=238 gui=bold
@@ -98,13 +106,9 @@ highlight PmenuSel ctermbg=yellow ctermfg=black
 filetype plugin on
 
 " For Lokaltog/vim-powerline
+Bundle 'Lokaltog/vim-powerline'
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
-
-" For myusuf3/numbers.vim
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-nmap <C-N><C-N> :set invnumber<CR>
-
 
 " Brief help
 " :BundleList          - list configured bundles
