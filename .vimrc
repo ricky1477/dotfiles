@@ -32,24 +32,18 @@ au ColorScheme * highlight ExtraWhitespace guibg=red
 au BufEnter * match ExtraWhitespace /\s\+$/
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhiteSpace /\s\+$/
-" Always be in Paste Mode
-set paste
 " Respect modeline in files
 set modeline
 set modelines=4
 " Enable per-directory .vimrc files and disable unsafe commands in them
 set exrc
 set secure
-" Enable line numbers
-" set number
 " Enable syntax highlighting
 syntax on
-" Enable line numbers
-" set number
 " Make tabs as wide as two spaces
 set tabstop=2
-set expandtab
 set shiftwidth=2
+set expandtab
 set softtabstop=2
 set smartindent
 set autoindent
@@ -90,6 +84,18 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle "myusuf3/numbers.vim"
+Bundle 'surround.vim'
+" Bundle 'Syntastic'
+" SnipMate
+Bundle "garbas/vim-snipmate"
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+" order matters, snippets_dir before filetype
+let g:snippets_dir = "~/.vim/bundle/snipmate-snippets/snippets/"
+highlight Pmenu ctermbg=238 gui=bold
+highlight PmenuSel ctermbg=yellow ctermfg=black
+filetype plugin on
 
 " For Lokaltog/vim-powerline
 let g:Powerline_symbols = 'fancy'
