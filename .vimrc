@@ -88,6 +88,9 @@ Bundle "myusuf3/numbers.vim"
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 nmap <C-N><C-N> :set invnumber<CR>
 
+" Command-T
+Bundle 'Command-T'
+
 " Surround
 Bundle 'surround.vim'
 
@@ -105,7 +108,7 @@ highlight Pmenu ctermbg=238 gui=bold
 highlight PmenuSel ctermbg=yellow ctermfg=black
 filetype plugin on
 
-" For Lokaltog/vim-powerline
+" Lokaltog/vim-powerline
 Bundle 'Lokaltog/vim-powerline'
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
