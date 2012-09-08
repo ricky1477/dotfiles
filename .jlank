@@ -1,0 +1,7 @@
+# Load ~/.jlank/.bash_profile, ~/.jlank/.vimrc, ~/.jlank/.inputrc, ~/.jlank/.wgetrc,
+# ~/.jlank/.gitconfig, ~/.jlank/.gitignore, and ~/.jlank/.gitattributes
+# ~.jlank/.extra can be used for settings you don’t want to commit
+for file in ~/.jlank/.{bash_profile,vimrc,inputrc,wgetrc,gitconfig,gitignore,gitattributes}; do
+	[ -r "$file" ] && source "$file"
+done
+unset file
