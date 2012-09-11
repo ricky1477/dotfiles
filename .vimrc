@@ -49,6 +49,7 @@ set smartindent
 set autoindent
 " Highlight searches
 set hlsearch
+highlight Search ctermbg=black ctermfg=yellow term=underline
 " Ignore case of searches
 set ignorecase
 " Highlight dynamically as pattern is typed
