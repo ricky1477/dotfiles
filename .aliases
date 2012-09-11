@@ -9,6 +9,7 @@ alias -- -="cd -"
 # Shortcuts
 alias d="cd ~/Downloads"
 alias p="cd ~/Scm"
+alias t="cd ~/tmp"
 alias g="git"
 alias h="history"
 alias j="jobs"

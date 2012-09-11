@@ -1,0 +1,22 @@
+#/bin/bash
+
+# Load ~/.dotfiles/.extra, ~/.dotfiles/.bash_prompt,
+# ~/.dotfiles/.exports, ~/.dotfiles/.aliases, and ~/.dotfiles/.functions
+# ~.dotfiles/.extra can be used for settings you don’t want to commit
+for file in ~/.dotfiles/.{extra,bash_prompt,exports,aliases,functions}; do
+	[ -r "$file" ] && . "$file"
+done
+unset file
+
+if [ ! -d ~/.vim/backups ]; then
+  mkdir ~/.vim/backups
+fi
+
+if [ ! -d ~/.vim/swaps ]; then
+  mkdir ~/.vim/swaps
+fi
+
+# Source some run control files
+bind -f ~/.dotfiles/.inputrc
+export VIMINIT="source ~/.dotfiles/.vimrc"
+export GIT_CONFIG="~/.dotfiles/.gitconfig"
