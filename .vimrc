@@ -128,3 +128,13 @@ if version >= 703
   " see :h vundle for more details or wiki for FAQ
   " NOTE: comments after Bundle command are not allowed..
 endif
+ noremap  <Up> ""
+ noremap! <Up> <Esc>
+ noremap  <Down> ""
+ noremap! <Down> <Esc>
+ noremap  <Left> ""
+ noremap! <Left> <Esc>
+ noremap  <Right> ""
+ noremap! <Right> <Esc>
+
+set number
