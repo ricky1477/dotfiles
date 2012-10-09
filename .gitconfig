@@ -1,6 +1,6 @@
 [User]
-  name = John Lancaster
-  email = john.k.lancaster@gmail.com
+  name = Ricardo Kreyhsig
+  email = rickreyhsig@gmail.com
 [alias]
 	# View the SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph
