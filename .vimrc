@@ -79,55 +79,6 @@ if version > 703
   set number
 endif
 
-if version >= 703
-  " Vundle Packages
-  filetype off
-  filetype plugin indent on
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-  
-  " let Vundle manage Vundle
-  Bundle 'gmarik/vundle'
-  
-  " Numbers.vim
-  Bundle "myusuf3/numbers.vim"
-  highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-  nmap <C-N><C-N> :set invnumber<CR>
-  
-  " Command-T
-  Bundle 'Command-T'
-  
-  " Surround
-  Bundle 'surround.vim'
-  
-  " Syntastic: For js make sure you have jshint installed
-  Bundle 'Syntastic'
-  
-  " SnipMate
-  Bundle "honza/snipmate-snippets"
-  Bundle "garbas/vim-snipmate"
-  Bundle "MarcWeber/vim-addon-mw-utils"
-  Bundle "tomtom/tlib_vim"
-  " order matters, snippets_dir before filetype
-  let g:snippets_dir = "~/.vim/bundle/snipmate-snippets/snippets/"
-  highlight Pmenu ctermbg=238 gui=bold
-  highlight PmenuSel ctermbg=yellow ctermfg=black
-  filetype plugin on
-  
-  " Lokaltog/vim-powerline
-  Bundle 'Lokaltog/vim-powerline'
-  let g:Powerline_symbols = 'fancy'
-  set laststatus=2
-  
-  " Brief help
-  " :BundleList          - list configured bundles
-  " :BundleInstall(!)    - install(update) bundles
-  " :BundleSearch(!) foo - search(or refresh cache first) for foo
-  " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-  "
-  " see :h vundle for more details or wiki for FAQ
-  " NOTE: comments after Bundle command are not allowed..
-endif
  noremap  <Up> ""
  noremap! <Up> <Esc>
  noremap  <Down> ""

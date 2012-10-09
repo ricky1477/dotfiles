@@ -1,4 +1,4 @@
 #!/bin/bash
 
-. ~/.nvm/nvm.sh
-nvm use default > /dev/null
+#. ~/.nvm/nvm.sh
+#nvm use default > /dev/null
