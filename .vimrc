@@ -40,11 +40,11 @@ set exrc
 set secure
 " Enable syntax highlighting
 syntax on
-" Make tabs as wide as two spaces
-set tabstop=2
-set shiftwidth=2
+" Make tabs as wide as four spaces
+set tabstop=4
+set shiftwidth=4
 set expandtab
-set softtabstop=2
+set softtabstop=4
 set smartindent
 set autoindent
 " Highlight searches
@@ -89,3 +89,4 @@ endif
  noremap! <Right> <Esc>
 
 set number
+colorscheme elflord
