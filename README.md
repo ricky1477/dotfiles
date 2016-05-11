@@ -1,3 +1,15 @@
+My version of the Mathias's dotfiles
+
+To install using git:
+
+1) Navigate to Home directory
+2) 'git clone https://github.com/ricky1477/dotfiles.git ./.dotfiles'
+3) mkdir -p .vim/backups
+4) mkdir -p .vim/swaps
+5) . .dotfiles/source_me
+6) Add . ~/.dotfiles/source_me to .bashrc
+7) Add to .bash_profile if it doesn't work
+
 # Mathias’s dotfiles
 
 ## Installation
